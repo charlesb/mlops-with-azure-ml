@@ -1,8 +1,10 @@
 name: Linting and Unit Testing
 
 on: 
-  workflow_dispatch:
-
+  pull_request:
+    branches:
+      - main
+      
 jobs:
   job1:
     name: linting
